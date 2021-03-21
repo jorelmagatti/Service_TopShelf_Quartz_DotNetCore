@@ -4,12 +4,14 @@ using Quartz.Impl;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace ConsoleServiceTopShelfQuartz
 {
     public static class ExecutaRotinasQuartz
     {
         private static IScheduler scheduler { get; set; }
+        public static bool flExecute { get; set; } = true;
 
         public static async void StartaRotinas()
         {
@@ -26,20 +28,19 @@ namespace ConsoleServiceTopShelfQuartz
 
             ITrigger trigger = TriggerBuilder.Create()
                 .WithIdentity("myTrigger", "group1")
-                .WithSchedule(CronScheduleBuilder.DailyAtHourAndMinute(10, 00))
+                .WithSchedule(CronScheduleBuilder.DailyAtHourAndMinute(17, 50))
                 .Build();
 
-            await scheduler.ScheduleJob(job, trigger);
+            await scheduler.ScheduleJob(job, trigger);            
             await scheduler.Start();
-
-            Console.ReadKey();
-
         }
 
         public async static void StopaRotina()
         {
+            flExecute = false;
             Console.WriteLine("Encerado Robo de Rotina de Alertas!");
-            await scheduler.Shutdown();
+            if(scheduler != null)
+                await scheduler.Shutdown();
         }
     }
 }

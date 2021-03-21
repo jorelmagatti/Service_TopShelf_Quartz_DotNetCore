@@ -46,6 +46,7 @@ namespace Alerta
             {
                 lblMensagemAlerta.Text = $"Alerta das {DateTime.Now} \r\n -> Informação sobre este alerta:\r\nResultado padrão da alerta...";
             }
+
             lblTituloAlerta.Refresh();
             lblMensagemAlerta.Refresh();
         }

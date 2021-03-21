@@ -61,7 +61,7 @@ namespace Alerta
             this.Controls.Add(this.lblMensagemAlerta);
             this.Controls.Add(this.lblTituloAlerta);
             this.Name = "AlertaForm";
-            this.Text = "Form1";
+            this.Text = "Alerta RPA ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

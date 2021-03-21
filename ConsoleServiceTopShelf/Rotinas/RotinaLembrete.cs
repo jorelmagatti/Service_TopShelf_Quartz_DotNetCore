@@ -23,8 +23,9 @@ namespace ConsoleServiceTopShelf.Rotinas
         {
             try
             {
-                string dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                string appWindowsForms = dir.Replace("ConsoleServiceTopShelf", "Alerta").Replace("\\netcoreapp3.1", "") + "\\Alerta.exe";
+                //string dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                //string appWindowsForms = dir.Replace("ConsoleServiceTopShelf", "Alerta").Replace("\\netcoreapp3.1", "") + "\\Alerta.exe";
+                string appWindowsForms = @"C:\Users\ab1232338\source\repos\jorelmagatti\Service_TopShelf_Quartz_DotNetCore\Alerta\bin\Debug\Alerta.exe";
 
                 EncerraProcessAlerta();
 
