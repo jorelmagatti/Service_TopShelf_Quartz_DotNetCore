@@ -1,0 +1,7 @@
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\bin\Debug\MewuPrimeiroService.exe.config
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\bin\Debug\MewuPrimeiroService.exe
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\bin\Debug\MewuPrimeiroService.pdb
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\obj\Debug\MewuPrimeiroService.csprojAssemblyReference.cache
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\obj\Debug\MewuPrimeiroService.csproj.CoreCompileInputs.cache
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\obj\Debug\MewuPrimeiroService.exe
+C:\Users\ab1232338\source\repos\ConsoleRotinaComQuartz\MewuPrimeiroService\obj\Debug\MewuPrimeiroService.pdb
