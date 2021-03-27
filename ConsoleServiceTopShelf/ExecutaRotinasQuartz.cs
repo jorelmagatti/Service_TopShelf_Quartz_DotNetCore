@@ -1,4 +1,5 @@
-﻿using ConsoleServiceTopShelf.Rotinas;
+﻿using ConsoleServiceTopShelf;
+using ConsoleServiceTopShelf.Rotinas;
 using Quartz;
 using Quartz.Impl;
 using System;
@@ -15,20 +16,25 @@ namespace ConsoleServiceTopShelfQuartz
 
         public static async void StartaRotinas()
         {
-            Console.WriteLine("Iniciado Robo de Rotina de Alertas!");
+            int horas = 17;
+            int minutos = 25;
+
+            Console.WriteLine("Iniciado Robo de Encerrar processo de Alertas!");
+            Console.WriteLine($"Rotina Diária progamada para as {horas}:{minutos}!");
+            LogLocal.Log($"Rotina Diária progamada para as {horas}:{minutos}!");
 
             StdSchedulerFactory factory = new StdSchedulerFactory();
 
             IScheduler scheduler = await factory.GetScheduler();
             await scheduler.Start();
 
-            IJobDetail job = JobBuilder.Create<RotinaLembrete>()
+            IJobDetail job = JobBuilder.Create<RotinaEncerraProcesso>()
                 .WithIdentity("myJob", "group1")
                 .Build();
 
             ITrigger trigger = TriggerBuilder.Create()
                 .WithIdentity("myTrigger", "group1")
-                .WithSchedule(CronScheduleBuilder.DailyAtHourAndMinute(17, 50))
+                .WithSchedule(CronScheduleBuilder.DailyAtHourAndMinute(horas, minutos))
                 .Build();
 
             await scheduler.ScheduleJob(job, trigger);            

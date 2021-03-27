@@ -66,3 +66,4 @@ C:\Users\ab1232338\source\repos\jorelmagatti\Service_TopShelf_Quartz_DotNetCore\
 C:\Users\ab1232338\source\repos\jorelmagatti\Service_TopShelf_Quartz_DotNetCore\ConsoleServiceTopShelf\obj\Debug\netcoreapp3.1\ConsoleServiceTopShelfQuartz.dll
 C:\Users\ab1232338\source\repos\jorelmagatti\Service_TopShelf_Quartz_DotNetCore\ConsoleServiceTopShelf\obj\Debug\netcoreapp3.1\ConsoleServiceTopShelfQuartz.pdb
 C:\Users\ab1232338\source\repos\jorelmagatti\Service_TopShelf_Quartz_DotNetCore\ConsoleServiceTopShelf\obj\Debug\netcoreapp3.1\ConsoleServiceTopShelfQuartz.genruntimeconfig.cache
+C:\Users\ab1232338\source\repos\jorelmagatti\Service_TopShelf_Quartz_DotNetCore\ConsoleServiceTopShelf\bin\Debug\netcoreapp3.1\ConsoleServiceTopShelfQuartz.dll.config

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConsoleServiceTopShelfQuartz
 {
-    public class GerenciadorSericos
+    public class GerenciadorServicos
     {
         internal static void Configure()
         {

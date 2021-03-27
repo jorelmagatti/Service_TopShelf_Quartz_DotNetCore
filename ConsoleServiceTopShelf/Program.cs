@@ -6,7 +6,7 @@ namespace ConsoleServiceTopShelfQuartz
     {
         static void Main(string[] args)
         {
-            GerenciadorSericos.Configure();
+            GerenciadorServicos.Configure();
         }
     }
 }
