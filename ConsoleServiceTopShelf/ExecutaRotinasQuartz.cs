@@ -44,7 +44,7 @@ namespace ConsoleServiceTopShelfQuartz
         public async static void StopaRotina()
         {
             flExecute = false;
-            Console.WriteLine("Encerado Robo de Rotina de Alertas!");
+            Console.WriteLine("Encerado Robo de Rotina!");
             if(scheduler != null)
                 await scheduler.Shutdown();
         }
